@@ -11,6 +11,7 @@ Não tem build nem dependência: é HTML e CSS puros. Para ver no PC, abra o `in
 |---|---|
 | `index.html` | A página inteira (o CSS está dentro dela, sem JavaScript) |
 | `termos.html` | Termos de uso |
+| `licencas.html` | Licenças de software livre (libVLC/FFmpeg LGPL no Windows, fonte Inter) |
 | `404.html` | Página de endereço não encontrado |
 | `assets/inter.woff2` | Fonte Inter (só letras latinas, todos os pesos num arquivo de 48 KB) |
 | `assets/tela-tv.webp`, `assets/tela-celular.webp` | Telas do app com conteúdo fictício |
@@ -33,7 +34,9 @@ Links:
 - Amazon Appstore (Fire TV): o link da ficha, quando existir. **Sem preço nem "assine" perto dele** (regra da Amazon).
 - Windows: `https://github.com/f4biofish/Zappy-TV-Site/releases/latest/download/ZappyTV-windows.msi`
   (o MSI vai como arquivo de um Release deste repositório, sempre com esse nome, tag `windows-vX.Y.Z`).
-  Só publicar depois da revisão GPL do avcodec (ver `docs/LICENCAS.md` no repositório do app).
+  Revisão feita em 21/11/2026: o avcodec do VLC 3.0.21 é "LGPL version 2.1 or later". Ao trocar a versão do VLC,
+  repetir a checagem (ver `docs/LICENCAS.md` no repositório do app) e atualizar `licencas.html`.
+  A cada versão nova: atualizar versão, tamanho e SHA-256 no cartão do Windows em `index.html`.
 
 ## Cuidados
 
