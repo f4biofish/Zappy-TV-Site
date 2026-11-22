@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Licenças · Zappy TV</title>
+<meta name="description" content="Componentes de software livre usados pelo Zappy TV, suas licenças e onde obter o código-fonte.">
+<meta name="theme-color" content="#0D0C17">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="preload" href="assets/inter.woff2" as="font" type="font/woff2" crossorigin>
+<style>
+@font-face{font-family:Inter;src:url(assets/inter.woff2) format("woff2");font-weight:100 900;font-display:swap}
+*{box-sizing:border-box}
+body{margin:0;background:#0D0C17;color:#F4F3FA;font:16px/1.7 Inter,system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+a{color:#A78BFA}
+a:focus-visible{outline:2px solid #22D3EE;outline-offset:3px;border-radius:4px}
+.caixa{max-width:760px;margin:0 auto;padding:0 24px}
+header{border-bottom:1px solid #221F38}
+header .caixa{max-width:1200px;padding-top:18px;padding-bottom:18px;display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap}
+.marca{display:flex;align-items:center;gap:10px;font-weight:800;font-size:21px;color:#F4F3FA;text-decoration:none}
+.voltar{color:#ABA8C3;text-decoration:none;font-size:15px;min-height:44px;display:inline-flex;align-items:center}
+main.caixa{padding-top:64px;padding-bottom:88px}
+h1{margin:0 0 8px;font-weight:800;font-size:clamp(34px,4vw,48px);line-height:1.1;letter-spacing:-.03em}
+.data{margin:0 0 40px;color:#8F8CAB;font-size:14px}
+h2{margin:40px 0 10px;font-size:21px;font-weight:600}
+h3{margin:24px 0 8px;font-size:17px;font-weight:600}
+p,li{color:#CFCDE0}
+p{margin:0 0 14px}
+ul{margin:0 0 14px;padding-left:22px}
+li{margin-bottom:6px}
+.destaque{background:#16142A;border:1px solid #26233F;border-radius:14px;padding:18px 22px;margin:0 0 32px}
+.destaque p{margin:0}
+footer{border-top:1px solid #221F38}
+footer .caixa{max-width:1200px;padding-top:32px;padding-bottom:32px;display:flex;flex-wrap:wrap;justify-content:space-between;gap:16px 24px;font-size:14px;color:#8F8CAB}
+footer nav{display:flex;flex-wrap:wrap;gap:12px 24px}
+footer nav a{color:#ABA8C3;text-decoration:none}
+</style>
+</head>
+<body>
+<header>
+<div class="caixa">
+<a href="./" class="marca" aria-label="Zappy TV, página inicial"><svg width="34" height="34" viewBox="120 120 300 310" aria-hidden="true"><defs><linearGradient id="zg" gradientUnits="userSpaceOnUse" x1="121" y1="121" x2="401" y2="415"><stop offset="0" stop-color="#8B5CF6"/><stop offset="1" stop-color="#22D3EE"/></linearGradient></defs><path d="M150 150H330L180 352H300" fill="none" stroke="url(#zg)" stroke-width="58" stroke-linejoin="round" stroke-linecap="round"/><path d="M300 300L390 352L300 404Z" fill="url(#zg)" stroke="url(#zg)" stroke-width="22" stroke-linejoin="round"/></svg>Zappy TV</a>
+<a href="./" class="voltar">← Voltar ao site</a>
+</div>
+</header>
+
+<main class="caixa">
+<h1>Licenças de software livre</h1>
+<p class="data">Atualizado em 21/11/2026</p>
+
+<p>O Zappy TV usa componentes de software livre. Agradecemos aos seus autores. Esta página lista esses componentes, suas licenças e onde obter o código-fonte.</p>
+
+<h2>Zappy TV para Windows</h2>
+<h3>libVLC (VLC media player 3.0.21)</h3>
+<p>O instalador para Windows inclui a biblioteca libVLC e seus módulos, da VideoLAN, distribuídos sob a <a href="https://www.gnu.org/licenses/old-licenses/lgpl-2.1.html">GNU Lesser General Public License, versão 2.1 ou posterior (LGPL)</a>. Os módulos ficam em arquivos DLL separados na pasta de instalação do app e podem ser substituídos por outra versão compatível.</p>
+<ul>
+<li>Código-fonte do VLC 3.0.21: <a href="https://download.videolan.org/pub/videolan/vlc/3.0.21/">download.videolan.org/pub/videolan/vlc/3.0.21</a></li>
+<li>Site do projeto: <a href="https://www.videolan.org/">videolan.org</a></li>
+</ul>
+<h3>FFmpeg (libavcodec e bibliotecas relacionadas)</h3>
+<p>Incluído no libVLC acima, compilado em modo LGPL (<a href="https://www.gnu.org/licenses/old-licenses/lgpl-2.1.html">LGPL versão 2.1 ou posterior</a>). O código-fonte usado faz parte dos pacotes de código do VLC 3.0.21 e está em <a href="https://ffmpeg.org/download.html">ffmpeg.org</a>.</p>
+<p>Se quiser receber uma cópia do código-fonte desses componentes na versão exata que distribuímos, escreva para <a href="mailto:fabiofish@gmail.com">fabiofish@gmail.com</a>. Esta oferta vale por pelo menos 3 anos a partir da última distribuição desta versão.</p>
+
+<h2>Este site</h2>
+<h3>Fonte Inter</h3>
+<p>De The Inter Project Authors, sob a <a href="https://openfontlicense.org/">SIL Open Font License 1.1</a>. <a href="https://github.com/rsms/inter">github.com/rsms/inter</a></p>
+</main>
+
+<footer>
+<div class="caixa">
+<span>© 2026 Zappy TV</span>
+<nav aria-label="Rodapé">
+<a href="https://iptv-licencas-fxz6sddhfa-uk.a.run.app/privacidade">Política de privacidade</a>
+<a href="termos.html">Termos de uso</a>
+<a href="https://iptv-licencas-fxz6sddhfa-uk.a.run.app/excluir-conta">Excluir conta</a>
+<a href="licencas.html">Licenças</a>
+<a href="mailto:fabiofish@gmail.com">Contato</a>
+</nav>
+</div>
+</footer>
+</body>
+</html>

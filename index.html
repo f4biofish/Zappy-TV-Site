@@ -84,6 +84,7 @@ h3{font-size:21px;font-weight:600}
 .plat p{color:var(--suave);font-size:15px}
 .plat .link{color:var(--roxo);font-size:14px;text-decoration:underline}
 .acao{align-self:flex-start;display:inline-flex;align-items:center;gap:10px;white-space:nowrap;flex-wrap:wrap;max-width:100%;background:var(--ciano);color:var(--fundo);font-weight:600;padding:12px 20px;border-radius:12px;min-height:48px}
+.hash{font-size:12px;color:var(--fraco);margin-top:6px}.hash code{font-family:ui-monospace,Consolas,monospace;word-break:break-all;color:var(--suave)}
 .acao.contorno{background:none;border:1px solid #4A4570;color:var(--texto)}
 .acao.breve{background:none;border:1px dashed #4A4570;color:var(--suave);opacity:1}
 /* Dúvidas */
@@ -153,12 +154,12 @@ footer nav a{color:var(--suave)}
 <svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><use href="#i-fire"/></svg>
 <span><small>Fire TV</small><b>Amazon Appstore</b></span>
 </span>
-<span class="loja breve" aria-disabled="true">
+<a class="loja" href="https://github.com/f4biofish/Zappy-TV-Site/releases/latest/download/ZappyTV-windows.msi">
 <svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><use href="#i-pc"/></svg>
 <span><small>Baixar para</small><b>Windows</b></span>
-</span>
+</a>
 </div>
-<p class="nota"><b>Em breve nas lojas.</b> O Zappy TV é um reprodutor: não inclui canais nem conteúdo.</p>
+<p class="nota"><b>Google Play e Amazon em breve.</b> O Zappy TV é um reprodutor: não inclui canais nem conteúdo.</p>
 </div>
 
 <div class="telas">
@@ -254,8 +255,8 @@ footer nav a{color:var(--suave)}
 </div>
 <div class="plat">
 <svg width="34" height="34" fill="none" stroke="#F4F3FA" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><use href="#i-pc"/></svg>
-<div><h3>Windows</h3><p>Windows 10 ou 11 (64 bits). Instalador .msi de cerca de 110 MB.</p><a class="link" href="#instalar-windows">Como instalar no Windows</a></div>
-<span class="acao breve" aria-disabled="true">Baixar para Windows <span class="etiqueta">Em breve</span></span>
+<div><h3>Windows</h3><p>Windows 10 ou 11 (64 bits). Versão 0.1.0, instalador .msi de 110 MB.</p><a class="link" href="#instalar-windows">Como instalar no Windows</a><p class="hash">SHA-256: <code>436f3e3de2a4f68d1b7750bd02a68d4cc533121178249d7deeb2547bf90d7fb3</code></p></div>
+<a class="acao" href="https://github.com/f4biofish/Zappy-TV-Site/releases/latest/download/ZappyTV-windows.msi"><svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><use href="#i-baixar"/></svg>Baixar para Windows</a>
 </div>
 </div>
 </div>
@@ -268,7 +269,7 @@ footer nav a{color:var(--suave)}
 <details><summary>Quais formatos de lista são aceitos?</summary><p>Listas M3U (por link ou arquivo) e login de servidores Xtream (servidor, usuário e senha). O guia de programação (XMLTV) também é lido.</p></details>
 <details><summary>Em quais aparelhos funciona?</summary><p>Android TV e Google TV, Fire TV, celulares com Android 7.0 ou mais novo e computadores com Windows 10 ou 11 (64 bits).</p></details>
 <details><summary>O app é gratuito?</summary><p>Você testa tudo de graça por 7 dias. Depois, o app continua grátis com alguns recursos limitados (eles aparecem com um cadeado). A versão completa libera tudo em até 5 aparelhos. Detalhes nos <a href="termos.html">Termos de uso</a>.</p></details>
-<details id="instalar-windows"><summary>O Windows avisou "editor desconhecido". É seguro?</summary><p>O instalador ainda não tem assinatura digital, por isso o Windows mostra esse aviso. Clique em "Mais informações" e depois em "Executar assim mesmo". Se quiser conferir o arquivo, compare o código SHA-256 publicado junto do download.</p></details>
+<details id="instalar-windows"><summary>O Windows avisou "editor desconhecido". É seguro?</summary><p>O instalador ainda não tem assinatura digital, por isso o Windows mostra esse aviso. Clique em "Mais informações" e depois em "Executar assim mesmo". Se quiser conferir o arquivo, compare o código SHA-256 mostrado no cartão do Windows com o resultado do comando <code>Get-FileHash ZappyTV-windows.msi</code> no PowerShell.</p></details>
 <details><summary>Como apago minha conta?</summary><p>No app, em Minha licença, ou pela página <a href="https://iptv-licencas-fxz6sddhfa-uk.a.run.app/excluir-conta">Excluir conta</a>.</p></details>
 </div>
 </section>
@@ -285,6 +286,7 @@ footer nav a{color:var(--suave)}
 <a href="https://iptv-licencas-fxz6sddhfa-uk.a.run.app/privacidade">Política de privacidade</a>
 <a href="termos.html">Termos de uso</a>
 <a href="https://iptv-licencas-fxz6sddhfa-uk.a.run.app/excluir-conta">Excluir conta</a>
+<a href="licencas.html">Licenças</a>
 <a href="mailto:fabiofish@gmail.com">Contato</a>
 </nav>
 </div>
