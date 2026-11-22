@@ -1,7 +1,11 @@
 # Zappy TV: site de divulgação e download
 
 Site estático do Zappy TV, publicado pelo GitHub Pages a partir da branch `main` (pasta raiz).
-Endereço provisório: https://f4biofish.github.io/Zappy-TV-Site/ (o Pages diferencia maiúsculas)
+Endereço: **https://zappytv.app.br** (domínio no registro.br, arquivo `CNAME`). O endereço antigo
+https://f4biofish.github.io/Zappy-TV-Site/ redireciona para ele.
+
+DNS no registro.br: 4 registros A em `zappytv.app.br` (185.199.108.153, .109.153, .110.153, .111.153)
+e CNAME `www` → `f4biofish.github.io`. Em Settings → Pages: domínio `zappytv.app.br` e "Enforce HTTPS".
 
 Não tem build nem dependência: é HTML e CSS puros. Para ver no PC, abra o `index.html` no navegador.
 
@@ -42,5 +46,5 @@ Links:
 
 - Nunca mostrar canais reais, logos de emissoras, capas de filmes reais ou frases como "canais grátis".
 - Manter a página leve: hoje são cerca de 120 KB na primeira visita.
-- Privacidade e Excluir conta ficam no servidor de licenças; ao trocar para domínio próprio, atualizar os links aqui
-  e no `404.html`.
+- Privacidade e Excluir conta ficam no servidor de licenças; se o servidor ganhar um subdomínio (ex.: api.zappytv.app.br),
+  atualizar esses links em `index.html`, `termos.html` e `licencas.html`.
