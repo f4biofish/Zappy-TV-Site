@@ -20,6 +20,8 @@ Não tem build nem dependência: é HTML e CSS puros. Para ver no PC, abra o `in
 | `assets/inter.woff2` | Fonte Inter (só letras latinas, todos os pesos num arquivo de 48 KB) |
 | `assets/tela-tv.webp`, `assets/tela-celular.webp` | Telas do app com conteúdo fictício |
 | `favicon.svg`, `apple-touch-icon.png` | Ícone da aba e do atalho no celular |
+| `sitemap.xml` | Lista de páginas para o Google (atualizar ao criar página nova) |
+| `assets/compartilhar.jpg` | Imagem que aparece ao compartilhar o link (1200x630) |
 | `robots.txt`, `.nojekyll` | Para buscadores, e para o Pages servir os arquivos como estão |
 | `LICENCAS.md` | Licença da fonte |
 
