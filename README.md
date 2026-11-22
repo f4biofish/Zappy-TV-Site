@@ -1,7 +1,7 @@
 # Zappy TV: site de divulgação e download
 
 Site estático do Zappy TV, publicado pelo GitHub Pages a partir da branch `main` (pasta raiz).
-Endereço provisório: https://f4biofish.github.io/zappy-tv-site/
+Endereço provisório: https://f4biofish.github.io/Zappy-TV-Site/ (o Pages diferencia maiúsculas)
 
 Não tem build nem dependência: é HTML e CSS puros. Para ver no PC, abra o `index.html` no navegador.
 
@@ -10,6 +10,7 @@ Não tem build nem dependência: é HTML e CSS puros. Para ver no PC, abra o `in
 | Arquivo | O que é |
 |---|---|
 | `index.html` | A página inteira (o CSS está dentro dela, sem JavaScript) |
+| `termos.html` | Termos de uso |
 | `404.html` | Página de endereço não encontrado |
 | `assets/inter.woff2` | Fonte Inter (só letras latinas, todos os pesos num arquivo de 48 KB) |
 | `assets/tela-tv.webp`, `assets/tela-celular.webp` | Telas do app com conteúdo fictício |
@@ -30,7 +31,7 @@ Os botões das lojas estão como "Em breve" (um `<span class="... breve">`). Em 
 Links:
 - Google Play (TV e celular): `https://play.google.com/store/apps/details?id=br.com.zappy.tv`
 - Amazon Appstore (Fire TV): o link da ficha, quando existir. **Sem preço nem "assine" perto dele** (regra da Amazon).
-- Windows: `https://github.com/f4biofish/zappy-tv-site/releases/latest/download/ZappyTV-windows.msi`
+- Windows: `https://github.com/f4biofish/Zappy-TV-Site/releases/latest/download/ZappyTV-windows.msi`
   (o MSI vai como arquivo de um Release deste repositório, sempre com esse nome, tag `windows-vX.Y.Z`).
   Só publicar depois da revisão GPL do avcodec (ver `docs/LICENCAS.md` no repositório do app).
 
