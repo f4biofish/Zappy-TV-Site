@@ -7,6 +7,10 @@
 <meta name="description" content="Zappy TV é um reprodutor de listas M3U e Xtream para Android TV, Fire TV, celular Android e Windows. TV ao vivo com guia, filmes e séries organizados. Não inclui canais.">
 <meta name="theme-color" content="#0D0C17">
 <link rel="canonical" href="https://zappytv.app.br/">
+<link rel="alternate" hreflang="pt-BR" href="https://zappytv.app.br/">
+<link rel="alternate" hreflang="en" href="https://zappytv.app.br/en/">
+<link rel="alternate" hreflang="es" href="https://zappytv.app.br/es/">
+<link rel="alternate" hreflang="x-default" href="https://zappytv.app.br/">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Zappy TV">
 <meta property="og:locale" content="pt_BR">
@@ -100,6 +104,10 @@ h3{font-size:21px;font-weight:600}
 .hash{font-size:12px;color:var(--fraco);margin-top:6px}.hash code{font-family:ui-monospace,Consolas,monospace;word-break:break-all;color:var(--suave)}
 .acao.contorno{background:none;border:1px solid #4A4570;color:var(--texto)}
 .acao.breve{background:none;border:1px dashed #4A4570;color:var(--suave);opacity:1}
+/* Idiomas */
+.idiomas{display:flex;gap:4px;font-size:13px;font-weight:600;letter-spacing:.04em}.idiomas a{color:var(--fraco);padding:10px 6px;min-height:44px;display:inline-flex;align-items:center}.idiomas a[aria-current]{color:var(--texto)}
+/* Celular: logo, idiomas e o botão não cabem numa linha; os botões de baixar já aparecem logo abaixo. */
+@media (max-width:480px){nav.principal{display:none}}
 /* Dúvidas */
 #faq{max-width:820px;padding-top:0;gap:36px}
 #faq h2{font-size:clamp(30px,3.4vw,42px);text-align:center}
@@ -137,6 +145,7 @@ footer nav a{color:var(--suave)}
 <header>
 <div class="caixa">
 <a href="#topo" class="marca" aria-label="Zappy TV, início"><svg width="34" height="34" aria-hidden="true"><use href="#logo"/></svg>Zappy TV</a>
+<nav class="idiomas" aria-label="Idioma"><a href="./" hreflang="pt-BR" lang="pt-BR" title="Português" aria-current="true">PT</a><a href="en/" hreflang="en" lang="en" title="English">EN</a><a href="es/" hreflang="es" lang="es" title="Español">ES</a></nav>
 <nav class="principal" aria-label="Principal">
 <a href="#recursos">Recursos</a>
 <a href="#como-funciona">Como funciona</a>

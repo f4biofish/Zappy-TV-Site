@@ -24,16 +24,31 @@ Não tem build nem dependência: é HTML e CSS puros. Para ver no PC, abra o `in
 | `assets/compartilhar.jpg` | Imagem que aparece ao compartilhar o link (1200x630) |
 | `robots.txt`, `.nojekyll` | Para buscadores, e para o Pages servir os arquivos como estão |
 | `LICENCAS.md` | Licença da fonte |
+| `en/`, `es/` | As mesmas páginas em inglês e espanhol (`index.html`, `termos.html`, `licencas.html`) |
+
+## Idiomas
+
+O site existe em português (raiz), inglês (`/en/`) e espanhol (`/es/`). Não há redirecionamento automático:
+quem chega escolhe no seletor "PT · EN · ES" do topo, e o Google mostra cada versão pelo idioma da busca
+(marcações `hreflang` em cada página e no `sitemap.xml`; o `x-default` é o português).
+
+- **Toda mudança de texto, botão, versão ou SHA-256 vale para as três pastas.** Mexa nos três arquivos.
+- Termos em inglês e espanhol dizem que, se houver diferença, vale a versão em português. Ao mudar os termos,
+  atualize as três versões e a data.
+- Links para Privacidade e Excluir conta levam `?lang=en` ou `?lang=es`, para o servidor abrir no mesmo idioma.
+- Página nova: crie nas três pastas, com `canonical`, os quatro `<link rel="alternate" hreflang>` e o seletor,
+  e acrescente ao `sitemap.xml`.
+- As imagens das telas são as mesmas nos três idiomas (o app aparece em português).
 
 ## Quando um app for publicado
 
-Os botões das lojas estão como "Em breve" (um `<span class="... breve">`). Em `index.html`, em dois lugares
-(topo da página e seção `#download`):
+Os botões das lojas estão como "Em breve" (um `<span class="... breve">`). Em `index.html`, `en/index.html` e
+`es/index.html`, em dois lugares de cada (topo da página e seção `#download`):
 
 1. Troque o `<span ... aria-disabled="true">` por `<a href="LINK" target="_blank" rel="noopener">`
    (e o `</span>` de fechamento por `</a>`).
-2. Tire a palavra `breve` da classe e a `<span class="etiqueta">Em breve</span>`.
-3. Quando todos estiverem publicados, apague a frase "Em breve nas lojas." do topo.
+2. Tire a palavra `breve` da classe e a etiqueta (`Em breve`, `Coming soon`, `Muy pronto`).
+3. Quando todos estiverem publicados, apague a frase "Google Play e Amazon em breve." do topo (e a de cada idioma).
 
 Links:
 - Google Play (TV e celular): `https://play.google.com/store/apps/details?id=br.com.zappy.tv`
@@ -42,11 +57,11 @@ Links:
   (o MSI vai como arquivo de um Release deste repositório, sempre com esse nome, tag `windows-vX.Y.Z`).
   Revisão feita em 21/11/2026: o avcodec do VLC 3.0.21 é "LGPL version 2.1 or later". Ao trocar a versão do VLC,
   repetir a checagem (ver `docs/LICENCAS.md` no repositório do app) e atualizar `licencas.html`.
-  A cada versão nova: atualizar versão, tamanho e SHA-256 no cartão do Windows em `index.html`.
+  A cada versão nova: atualizar versão, tamanho e SHA-256 no cartão do Windows nos três `index.html`.
 
 ## Cuidados
 
 - Nunca mostrar canais reais, logos de emissoras, capas de filmes reais ou frases como "canais grátis".
 - Manter a página leve: hoje são cerca de 120 KB na primeira visita.
 - Privacidade e Excluir conta ficam no servidor de licenças; se o servidor ganhar um subdomínio (ex.: api.zappytv.app.br),
-  atualizar esses links em `index.html`, `termos.html` e `licencas.html`.
+  atualizar esses links nas páginas das três pastas.

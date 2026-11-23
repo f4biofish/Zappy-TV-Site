@@ -1,0 +1,317 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Zappy TV: your M3U and Xtream playlists on TV, phone and PC</title>
+<meta name="description" content="Zappy TV is an M3U and Xtream playlist player for Android TV, Fire TV, Android phones and Windows. Live TV with a guide, plus organized movies and series. No channels included.">
+<meta name="theme-color" content="#0D0C17">
+<link rel="canonical" href="https://zappytv.app.br/en/">
+<link rel="alternate" hreflang="pt-BR" href="https://zappytv.app.br/">
+<link rel="alternate" hreflang="en" href="https://zappytv.app.br/en/">
+<link rel="alternate" hreflang="es" href="https://zappytv.app.br/es/">
+<link rel="alternate" hreflang="x-default" href="https://zappytv.app.br/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Zappy TV">
+<meta property="og:locale" content="en_US">
+<meta property="og:url" content="https://zappytv.app.br/en/">
+<meta property="og:title" content="Zappy TV: your M3U and Xtream playlists on TV, phone and PC">
+<meta property="og:description" content="M3U and Xtream playlist player for Android TV, Fire TV, Android phones and Windows. Live TV with a guide, plus organized movies and series.">
+<meta property="og:image" content="https://zappytv.app.br/assets/compartilhar.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Zappy TV: your playlist, organized the way it should be. On TV, phone and computer.">
+<meta name="twitter:card" content="summary_large_image">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "Zappy TV", "url": "https://zappytv.app.br/en/", "description": "M3U and Xtream playlist player for TV, phone and computer. Live TV with a guide, plus organized movies and series. No channels or content included.", "applicationCategory": "MultimediaApplication", "operatingSystem": "Android, Android TV, Fire OS, Windows 10, Windows 11", "image": "https://zappytv.app.br/assets/compartilhar.jpg", "inLanguage": "en", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "BRL"}, "downloadUrl": "https://github.com/f4biofish/Zappy-TV-Site/releases/latest/download/ZappyTV-windows.msi"}</script>
+<link rel="icon" href="../favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="../apple-touch-icon.png">
+<link rel="preload" href="../assets/inter.woff2" as="font" type="font/woff2" crossorigin>
+<style>
+@font-face{font-family:Inter;src:url(../assets/inter.woff2) format("woff2");font-weight:100 900;font-display:swap}
+:root{--fundo:#0D0C17;--cartao:#16142A;--linha:#221F38;--linha2:#26233F;--borda:#36325A;--texto:#F4F3FA;--suave:#ABA8C3;--fraco:#8F8CAB;--ciano:#22D3EE;--roxo:#A78BFA}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--fundo);color:var(--texto);font:16px/1.6 Inter,system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;overflow-x:hidden}
+a{color:var(--texto);text-decoration:none}a:hover{color:#fff}
+a:focus-visible,summary:focus-visible{outline:2px solid var(--ciano);outline-offset:3px;border-radius:6px}
+img{max-width:100%;height:auto;display:block}
+h1,h2,h3,p{margin:0}
+.caixa{max-width:1200px;margin:0 auto;padding-left:24px;padding-right:24px}
+.marca{display:flex;align-items:center;gap:10px;font-weight:800;font-size:21px;letter-spacing:-.01em}
+/* Cabeçalho */
+header{border-bottom:1px solid var(--linha)}
+header .caixa{padding-top:18px;padding-bottom:18px;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:16px}
+nav.principal{display:flex;flex-wrap:wrap;align-items:center;gap:8px 28px;font-size:15px}
+nav.principal a{color:var(--suave)}
+nav.principal a.cta{background:var(--ciano);color:var(--fundo);font-weight:600;padding:10px 20px;border-radius:999px;min-height:44px;display:inline-flex;align-items:center}
+/* Topo */
+.topo{background:radial-gradient(ellipse 70% 60% at 15% 0%,#241E45 0%,var(--fundo) 70%)}
+.topo .caixa{padding-top:88px;padding-bottom:80px;display:flex;flex-wrap:wrap;align-items:center;gap:56px}
+.topo-texto{flex:1 1 480px;min-width:0;display:flex;flex-direction:column;gap:26px}
+.selo{align-self:flex-start;display:inline-flex;align-items:center;gap:8px;border:1px solid var(--borda);border-radius:999px;padding:6px 14px;font-size:13px;color:#CFCDE0;letter-spacing:.02em}
+.selo::before{content:"";width:8px;height:8px;border-radius:50%;background:var(--ciano)}
+h1{font-weight:800;font-size:clamp(38px,4.4vw,60px);line-height:1.04;letter-spacing:-.035em}
+.degrade{background:linear-gradient(90deg,var(--roxo),var(--ciano));-webkit-background-clip:text;background-clip:text;color:transparent}
+.lead{font-size:19px;color:var(--suave);max-width:520px}
+.botoes{display:flex;flex-wrap:wrap;gap:12px}
+.loja{display:inline-flex;align-items:center;gap:12px;border:1px solid var(--borda);padding:10px 20px;border-radius:14px;min-height:56px}
+.loja span{display:flex;flex-direction:column;line-height:1.15}
+.loja small{font-size:12px;font-weight:500;color:var(--suave)}
+.loja b{font-size:17px;font-weight:600}
+.loja.principal{background:var(--ciano);border-color:var(--ciano);color:var(--fundo)}
+.loja.principal small{color:var(--fundo)}
+.nota{font-size:13px;color:var(--fraco)}
+.breve{opacity:.55;cursor:default}
+.etiqueta{font-size:11px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;border:1px solid currentColor;border-radius:6px;padding:1px 6px;margin-left:4px}
+.telas{flex:1 1 500px;min-width:0;position:relative;padding-bottom:56px}
+.tv{background:#05040A;border:1px solid #2A2645;border-radius:16px;padding:10px;box-shadow:0 40px 90px rgba(0,0,0,.55)}
+.tv img{border-radius:8px;width:100%}
+.pe{width:22%;height:10px;margin:0 auto;background:#1A1730;border-radius:0 0 8px 8px}
+.celular{position:absolute;right:-6px;bottom:0;width:26%;max-width:150px;min-width:96px;background:#05040A;border:5px solid #2A2645;border-radius:22px;overflow:hidden;box-shadow:0 30px 60px rgba(0,0,0,.6)}
+.celular img{width:100%}
+/* Plataformas */
+.plataformas{border-top:1px solid var(--linha);border-bottom:1px solid var(--linha)}
+.plataformas .caixa{padding-top:28px;padding-bottom:28px;display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:16px 44px;color:#CFCDE0;font-size:15px}
+.plataformas .caixa>span{display:inline-flex;align-items:center;gap:10px}
+.rotulo{font-size:13px;letter-spacing:.12em;text-transform:uppercase;color:var(--fraco)}
+/* Seções */
+.secao{padding-top:112px;padding-bottom:112px;display:flex;flex-direction:column;gap:52px}
+.cabeca{display:flex;flex-direction:column;gap:14px;max-width:640px}
+.cabeca .rotulo{color:var(--ciano);font-weight:600}
+h2{font-weight:800;font-size:clamp(32px,3.6vw,46px);line-height:1.1;letter-spacing:-.03em}
+h3{font-size:21px;font-weight:600}
+.grade{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:20px}
+.recurso{background:var(--cartao);border:1px solid var(--linha);border-radius:18px;padding:32px;display:flex;flex-direction:column;gap:14px}
+.recurso p,.passo p{color:var(--suave)}
+#recursos{padding-bottom:40px}
+.passos{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:40px}
+.passo{display:flex;flex-direction:column;gap:14px;border-top:1px solid var(--borda);padding-top:28px}
+.passo>span{font-size:44px;font-weight:800;line-height:1}
+.passo h3{font-size:22px}
+/* Download */
+#download{padding-bottom:112px}
+.painel{background:var(--cartao);border:1px solid var(--linha2);border-radius:28px;padding:clamp(28px,5vw,64px);display:flex;flex-direction:column;gap:44px}
+.painel>div:first-child{display:flex;flex-direction:column;gap:14px;align-items:center;text-align:center}
+.painel h2{font-size:clamp(32px,4vw,52px)}
+.painel>div:first-child p{color:var(--suave);font-size:18px;max-width:520px}
+.baixar{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,400px),1fr));gap:18px}
+.plat{background:var(--fundo);border:1px solid var(--linha2);border-radius:20px;padding:30px;display:flex;flex-direction:column;gap:18px}
+.plat>div{display:flex;flex-direction:column;gap:6px;flex:1}
+.plat h3{font-size:22px}
+.plat p{color:var(--suave);font-size:15px}
+.plat .link{color:var(--roxo);font-size:14px;text-decoration:underline}
+.acao{align-self:flex-start;display:inline-flex;align-items:center;gap:10px;white-space:nowrap;flex-wrap:wrap;max-width:100%;background:var(--ciano);color:var(--fundo);font-weight:600;padding:12px 20px;border-radius:12px;min-height:48px}
+.hash{font-size:12px;color:var(--fraco);margin-top:6px}.hash code{font-family:ui-monospace,Consolas,monospace;word-break:break-all;color:var(--suave)}
+.acao.contorno{background:none;border:1px solid #4A4570;color:var(--texto)}
+.acao.breve{background:none;border:1px dashed #4A4570;color:var(--suave);opacity:1}
+/* Idiomas */
+.idiomas{display:flex;gap:4px;font-size:13px;font-weight:600;letter-spacing:.04em}.idiomas a{color:var(--fraco);padding:10px 6px;min-height:44px;display:inline-flex;align-items:center}.idiomas a[aria-current]{color:var(--texto)}
+/* Celular: logo, idiomas e o botão não cabem numa linha; os botões de baixar já aparecem logo abaixo. */
+@media (max-width:480px){nav.principal{display:none}}
+/* Dúvidas */
+#faq{max-width:820px;padding-top:0;gap:36px}
+#faq h2{font-size:clamp(30px,3.4vw,42px);text-align:center}
+details{border-top:1px solid var(--linha2);padding:22px 0}
+details:last-child{border-bottom:1px solid var(--linha2)}
+summary{cursor:pointer;list-style:none;font-weight:600;font-size:18px;display:flex;justify-content:space-between;gap:16px}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";color:var(--ciano)}
+details[open] summary::after{content:"−"}
+details p{margin-top:12px;color:var(--suave)}
+details a{color:var(--roxo);text-decoration:underline}
+/* Rodapé */
+footer{border-top:1px solid var(--linha)}
+footer .caixa{padding-top:40px;padding-bottom:40px;display:flex;flex-wrap:wrap;justify-content:space-between;gap:24px;font-size:14px;color:var(--fraco)}
+footer .caixa>div{display:flex;flex-direction:column;gap:8px;max-width:560px}
+footer .marca{font-size:17px}
+footer nav{display:flex;flex-wrap:wrap;gap:12px 24px;align-items:flex-start}
+footer nav a{color:var(--suave)}
+@media (max-width:560px){nav.principal a:not(.cta){display:none}.painel{padding:24px 16px}.plat{padding:22px}.topo .caixa{padding-top:56px;padding-bottom:56px}.secao{padding-top:80px;padding-bottom:80px}.loja{flex:1 1 100%}}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+<defs><linearGradient id="zg" gradientUnits="userSpaceOnUse" x1="121" y1="121" x2="401" y2="415"><stop offset="0" stop-color="#8B5CF6"/><stop offset="1" stop-color="#22D3EE"/></linearGradient></defs>
+<symbol id="logo" viewBox="120 120 300 310"><path d="M150 150H330L180 352H300" fill="none" stroke="url(#zg)" stroke-width="58" stroke-linejoin="round" stroke-linecap="round"/><path d="M300 300L390 352L300 404Z" fill="url(#zg)" stroke="url(#zg)" stroke-width="22" stroke-linejoin="round"/></symbol>
+<symbol id="i-tv" viewBox="0 0 24 24"><rect x="2.5" y="4" width="19" height="13" rx="2"/><path d="M9 21h6"/></symbol>
+<symbol id="i-fire" viewBox="0 0 24 24"><rect x="2.5" y="9" width="19" height="6" rx="3"/><path d="M7 12h3"/></symbol>
+<symbol id="i-cel" viewBox="0 0 24 24"><rect x="6" y="2.5" width="12" height="19" rx="2.5"/><path d="M11 18h2"/></symbol>
+<symbol id="i-pc" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="12" rx="2"/><path d="M8 20h8M12 16v4"/></symbol>
+<symbol id="i-play" viewBox="0 0 24 24"><path d="M5 3.5v17l14-8.5z"/></symbol>
+<symbol id="i-baixar" viewBox="0 0 24 24"><path d="M12 4v11M7 10l5 5 5-5M5 20h14"/></symbol>
+</svg>
+
+<header>
+<div class="caixa">
+<a href="#topo" class="marca" aria-label="Zappy TV, home"><svg width="34" height="34" aria-hidden="true"><use href="#logo"/></svg>Zappy TV</a>
+<nav class="idiomas" aria-label="Language"><a href="../" hreflang="pt-BR" lang="pt-BR" title="Português">PT</a><a href="./" hreflang="en" lang="en" title="English" aria-current="true">EN</a><a href="../es/" hreflang="es" lang="es" title="Español">ES</a></nav>
+<nav class="principal" aria-label="Main">
+<a href="#recursos">Features</a>
+<a href="#como-funciona">How it works</a>
+<a href="#faq">FAQ</a>
+<a href="#download" class="cta">Download free</a>
+</nav>
+</div>
+</header>
+
+<main>
+<section id="topo" class="topo">
+<div class="caixa">
+<div class="topo-texto">
+<span class="selo">On TV, phone and computer</span>
+<h1>Your playlist, organized <span class="degrade">the way it should be.</span></h1>
+<p class="lead">Open your M3U playlist or sign in to your Xtream server and see everything sorted into live TV, guide, movies and series. Built for the remote control, light even on basic devices.</p>
+<!--
+  LINKS DAS LOJAS: enquanto o app não estiver publicado, cada botão é um <span class="... breve">.
+  Quando publicar, troque o <span> por <a href="LINK" target="_blank" rel="noopener"> e tire "breve" e a etiqueta.
+  Os mesmos links se repetem na seção #download. Veja o README.
+-->
+<div class="botoes">
+<span class="loja principal breve" aria-disabled="true">
+<svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" aria-hidden="true"><use href="#i-play"/></svg>
+<span><small>TV and phone</small><b>Google Play</b></span>
+</span>
+<span class="loja breve" aria-disabled="true">
+<svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><use href="#i-fire"/></svg>
+<span><small>Fire TV</small><b>Amazon Appstore</b></span>
+</span>
+<a class="loja" href="https://github.com/f4biofish/Zappy-TV-Site/releases/latest/download/ZappyTV-windows.msi">
+<svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><use href="#i-pc"/></svg>
+<span><small>Download for</small><b>Windows</b></span>
+</a>
+</div>
+<p class="nota"><b>Google Play and Amazon coming soon.</b> Zappy TV is a player: it doesn't include any channels or content.</p>
+</div>
+
+<div class="telas">
+<div class="tv"><img src="../assets/tela-tv.webp" width="1120" height="630" alt="Zappy TV live TV screen on a television, with sample channels" fetchpriority="high"></div>
+<div class="pe"></div>
+<div class="celular"><img src="../assets/tela-celular.webp" width="360" height="800" alt="Zappy TV home screen on a phone" loading="lazy"></div>
+</div>
+</div>
+</section>
+
+<section class="plataformas" aria-label="Platforms">
+<div class="caixa">
+<span class="rotulo">Available for</span>
+<span><svg width="20" height="20" fill="none" stroke="#CFCDE0" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><use href="#i-tv"/></svg>Android TV and Google TV</span>
+<span><svg width="20" height="20" fill="none" stroke="#CFCDE0" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><use href="#i-fire"/></svg>Fire TV</span>
+<span><svg width="20" height="20" fill="none" stroke="#CFCDE0" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><use href="#i-cel"/></svg>Android phone</span>
+<span><svg width="20" height="20" fill="none" stroke="#CFCDE0" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><use href="#i-pc"/></svg>Windows</span>
+</div>
+</section>
+
+<section id="recursos" class="caixa secao">
+<div class="cabeca">
+<span class="rotulo">Features</span>
+<h2>Everything to watch, nothing in the way.</h2>
+</div>
+<div class="grade">
+<div class="recurso">
+<svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#22D3EE" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h10"/></svg>
+<h3>M3U and Xtream playlists</h3>
+<p>Paste the playlist link or sign in with your provider's server, username and password. The app organizes everything on its own.</p>
+</div>
+<div class="recurso">
+<svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#22D3EE" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 10h18M9 10v9"/></svg>
+<h3>Live TV with a guide</h3>
+<p>Channels by category, quick zapping and a program guide showing what's on now and next.</p>
+</div>
+<div class="recurso">
+<svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#22D3EE" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="7" width="14" height="13" rx="2"/><path d="M7 4h12a2 2 0 0 1 2 2v10"/></svg>
+<h3>Movies and series</h3>
+<p>Each in its own area, with posters, seasons and episodes neatly organized.</p>
+</div>
+<div class="recurso">
+<svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#22D3EE" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="7" y="2.5" width="10" height="19" rx="5"/><circle cx="12" cy="8" r="2"/><path d="M12 14v3"/></svg>
+<h3>Built for the remote control</h3>
+<p>Fast navigation with the D-pad, light and smooth even on TV boxes and Fire Sticks.</p>
+</div>
+<div class="recurso">
+<svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#22D3EE" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="5" width="13" height="10" rx="1.5"/><rect x="16" y="8" width="6" height="12" rx="1.5"/><path d="M5 19h7"/></svg>
+<h3>One license, up to 5 devices</h3>
+<p>The full version works on up to 5 devices: TV, phone and computer.</p>
+</div>
+<div class="recurso">
+<svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#22D3EE" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><path d="M14 14h3v3M21 14v7h-7M17 21v-1"/></svg>
+<h3>Activate the TV from your phone</h3>
+<p>No typing passwords with the remote: scan the QR code on the screen with your phone and you're done.</p>
+</div>
+</div>
+</section>
+
+<section id="como-funciona" class="caixa secao">
+<div class="cabeca">
+<span class="rotulo">How it works</span>
+<h2>From download to screen in three steps.</h2>
+</div>
+<div class="passos">
+<div class="passo"><span style="color:#A78BFA">01</span><h3>Install the app</h3><p>From Google Play on Android TV and phones, from the Amazon Appstore on Fire TV, or with the installer on Windows.</p></div>
+<div class="passo"><span style="color:#8FA9F8">02</span><h3>Add your playlist</h3><p>Enter your provider's M3U link or Xtream login details.</p></div>
+<div class="passo"><span style="color:#22D3EE">03</span><h3>Watch</h3><p>Live TV, guide, movies and series show up already sorted. Just pick one.</p></div>
+</div>
+</section>
+
+<section id="download" class="caixa">
+<div class="painel">
+<div>
+<h2>Download Zappy TV</h2>
+<p>Choose where you'll watch. Free to download.</p>
+</div>
+<div class="baixar">
+<div class="plat">
+<svg width="34" height="34" fill="none" stroke="#F4F3FA" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><use href="#i-tv"/></svg>
+<div><h3>Android TV and Google TV</h3><p>Installation and automatic updates through Google Play.</p></div>
+<span class="acao breve" aria-disabled="true">Google Play <span class="etiqueta">Coming soon</span></span>
+</div>
+<div class="plat">
+<svg width="34" height="34" fill="none" stroke="#F4F3FA" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><use href="#i-fire"/></svg>
+<div><h3>Fire TV</h3><p>Fire TV Stick and Fire TV smart TVs, through the Amazon Appstore.</p></div>
+<span class="acao breve" aria-disabled="true">Amazon Appstore <span class="etiqueta">Coming soon</span></span>
+</div>
+<div class="plat">
+<svg width="34" height="34" fill="none" stroke="#F4F3FA" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><use href="#i-cel"/></svg>
+<div><h3>Android phone</h3><p>Android 7.0 or newer, through Google Play.</p></div>
+<span class="acao breve" aria-disabled="true">Google Play <span class="etiqueta">Coming soon</span></span>
+</div>
+<div class="plat">
+<svg width="34" height="34" fill="none" stroke="#F4F3FA" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><use href="#i-pc"/></svg>
+<div><h3>Windows</h3><p>Windows 10 or 11 (64-bit). Version 0.1.1, 92 MB .msi installer.</p><a class="link" href="#instalar-windows">How to install on Windows</a><p class="hash">SHA-256: <code>7f6785050dffbb37fffcc3fddf57c5bbfa81775cc3b0d87d38d39bf41ac59f94</code></p></div>
+<a class="acao" href="https://github.com/f4biofish/Zappy-TV-Site/releases/latest/download/ZappyTV-windows.msi"><svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><use href="#i-baixar"/></svg>Download for Windows</a>
+</div>
+</div>
+</div>
+</section>
+
+<section id="faq" class="caixa secao" aria-labelledby="faq-titulo">
+<h2 id="faq-titulo">Frequently asked questions</h2>
+<div>
+<details><summary>Does the app come with channels?</summary><p>No. Zappy TV is a player: you use the M3U playlist or Xtream login provided by your provider.</p></details>
+<details><summary>Which playlist formats are supported?</summary><p>M3U playlists (by link or file) and Xtream server logins (server, username and password). The program guide (XMLTV) is read too.</p></details>
+<details><summary>Which devices does it work on?</summary><p>Android TV and Google TV, Fire TV, phones with Android 7.0 or newer and computers with Windows 10 or 11 (64-bit).</p></details>
+<details><summary>Is the app free?</summary><p>You can try everything for free for 7 days. After that, the app stays free with some features limited (they show a padlock). The full version unlocks everything on up to 5 devices. Details in the <a href="termos.html">Terms of use</a>.</p></details>
+<details id="instalar-windows"><summary>Windows warned about an "unknown publisher". Is it safe?</summary><p>The installer doesn't have a digital signature yet, so Windows shows this warning. Click "More info" and then "Run anyway". To check the file, compare the SHA-256 code shown on the Windows card with the result of the <code>Get-FileHash ZappyTV-windows.msi</code> command in PowerShell.</p></details>
+<details><summary>How do I delete my account?</summary><p>In the app, under My license, or on the <a href="https://iptv-licencas-fxz6sddhfa-uk.a.run.app/excluir-conta?lang=en">Delete account</a> page.</p></details>
+</div>
+</section>
+</main>
+
+<footer>
+<div class="caixa">
+<div>
+<span class="marca"><svg width="22" height="22" aria-hidden="true"><use href="#logo"/></svg>Zappy TV</span>
+<span>Zappy TV doesn't provide, host or sell any content. Users are responsible for the playlists they use.</span>
+<span>© 2026 Zappy TV. All rights reserved.</span>
+</div>
+<nav aria-label="Footer">
+<a href="https://iptv-licencas-fxz6sddhfa-uk.a.run.app/privacidade?lang=en">Privacy policy</a>
+<a href="termos.html">Terms of use</a>
+<a href="https://iptv-licencas-fxz6sddhfa-uk.a.run.app/excluir-conta?lang=en">Delete account</a>
+<a href="licencas.html">Licenses</a>
+<a href="mailto:fabiofish@gmail.com">Contact</a>
+</nav>
+</div>
+</footer>
+</body>
+</html>
