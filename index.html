@@ -83,6 +83,7 @@ h3{font-size:21px;font-weight:600}
 .grade{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:20px}
 .recurso{background:var(--cartao);border:1px solid var(--linha);border-radius:18px;padding:32px;display:flex;flex-direction:column;gap:14px}
 .recurso p,.passo p{color:var(--suave)}
+.recurso.largo{grid-column:1/-1}.recurso .link{color:var(--roxo);font-size:15px;text-decoration:underline;align-self:flex-start}
 #recursos{padding-bottom:40px}
 .passos{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:40px}
 .passo{display:flex;flex-direction:column;gap:14px;border-top:1px solid var(--borda);padding-top:28px}
@@ -238,6 +239,12 @@ footer nav a{color:var(--suave)}
 <h3>Ative a TV pelo celular</h3>
 <p>Nada de digitar senha com o controle: leia o QR code da tela com o celular e pronto.</p>
 </div>
+<div class="recurso largo">
+<svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#22D3EE" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 11a8 8 0 0 0-14.3-4.9L4 8M4 4v4h4M4 13a8 8 0 0 0 14.3 4.9L20 16M20 20v-4h-4"/></svg>
+<h3>Sincronização entre aparelhos</h3>
+<p>Favoritos, Continuar assistindo e Últimos canais iguais na TV, no celular e no PC. Você escolhe o que sincroniza em cada aparelho.</p>
+<a class="link" href="sincronizacao/">Saiba como ativar</a>
+</div>
 </div>
 </section>
 
@@ -292,6 +299,7 @@ footer nav a{color:var(--suave)}
 <details><summary>Em quais aparelhos funciona?</summary><p>Android TV e Google TV, Fire TV, celulares com Android 7.0 ou mais novo e computadores com Windows 10 ou 11 (64 bits).</p></details>
 <details><summary>O app é gratuito?</summary><p>Você testa tudo de graça por 7 dias. Depois, o app continua grátis com alguns recursos limitados (eles aparecem com um cadeado). A versão completa libera tudo em até 5 aparelhos. Detalhes nos <a href="termos.html">Termos de uso</a>.</p></details>
 <details id="instalar-windows"><summary>O Windows avisou "editor desconhecido". É seguro?</summary><p>O instalador ainda não tem assinatura digital, por isso o Windows mostra esse aviso. Clique em "Mais informações" e depois em "Executar assim mesmo". Se quiser conferir o arquivo, compare o código SHA-256 mostrado no cartão do Windows com o resultado do comando <code>Get-FileHash ZappyTV-windows.msi</code> no PowerShell.</p></details>
+<details><summary>Como sincronizo os favoritos entre aparelhos?</summary><p>Na versão completa, em Configurações &gt; Sincronização, coloque os aparelhos no mesmo grupo e ligue Favoritos, Continuar assistindo ou Últimos canais. O passo a passo está na página <a href="sincronizacao/">Sincronização entre aparelhos</a>.</p></details>
 <details><summary>Como apago minha conta?</summary><p>No app, em Minha licença, ou pela página <a href="https://iptv-licencas-fxz6sddhfa-uk.a.run.app/excluir-conta">Excluir conta</a>.</p></details>
 </div>
 </section>

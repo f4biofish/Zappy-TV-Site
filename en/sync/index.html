@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sync between devices | Zappy TV</title>
+<meta name="description" content="The same Favorites, Continue watching and Recent channels on your TV, phone and PC. See how to turn on Zappy TV sync.">
+<meta name="theme-color" content="#0D0C17">
+<link rel="canonical" href="https://zappytv.app.br/en/sync/">
+<link rel="alternate" hreflang="pt-BR" href="https://zappytv.app.br/sincronizacao/">
+<link rel="alternate" hreflang="en" href="https://zappytv.app.br/en/sync/">
+<link rel="alternate" hreflang="es" href="https://zappytv.app.br/es/sincronizacion/">
+<link rel="alternate" hreflang="x-default" href="https://zappytv.app.br/sincronizacao/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Zappy TV">
+<meta property="og:locale" content="en_US">
+<meta property="og:url" content="https://zappytv.app.br/en/sync/">
+<meta property="og:title" content="Sync between devices | Zappy TV">
+<meta property="og:description" content="The same Favorites, Continue watching and Recent channels on your TV, phone and PC. See how to turn on Zappy TV sync.">
+<meta property="og:image" content="https://zappytv.app.br/assets/compartilhar.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="preload" href="/assets/inter.woff2" as="font" type="font/woff2" crossorigin>
+<style>
+@font-face{font-family:Inter;src:url(/assets/inter.woff2) format("woff2");font-weight:100 900;font-display:swap}
+:root{--fundo:#0D0C17;--cartao:#16142A;--linha:#221F38;--linha2:#26233F;--borda:#36325A;--texto:#F4F3FA;--suave:#ABA8C3;--fraco:#8F8CAB;--ciano:#22D3EE;--roxo:#A78BFA}
+*{box-sizing:border-box}
+body{margin:0;background:var(--fundo);color:var(--texto);font:16px/1.6 Inter,system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;overflow-x:hidden}
+a{color:var(--texto);text-decoration:none}
+a:focus-visible,summary:focus-visible{outline:2px solid var(--ciano);outline-offset:3px;border-radius:6px}
+h1,h2,h3,p,ul{margin:0}
+.caixa{max-width:880px;margin:0 auto;padding-left:24px;padding-right:24px}
+.marca{display:flex;align-items:center;gap:10px;font-weight:800;font-size:21px;letter-spacing:-.01em}
+header{border-bottom:1px solid var(--linha)}
+header .caixa{padding-top:18px;padding-bottom:18px;display:flex;align-items:center;justify-content:space-between;gap:16px}
+.idiomas{display:flex;gap:4px;font-size:13px;font-weight:600;letter-spacing:.04em}.idiomas a{color:var(--fraco);padding:10px 6px;min-height:44px;display:inline-flex;align-items:center}.idiomas a[aria-current]{color:var(--texto)}
+.topo{background:radial-gradient(ellipse 80% 70% at 15% 0%,#241E45 0%,var(--fundo) 70%)}
+.topo .caixa{padding-top:72px;padding-bottom:56px;display:flex;flex-direction:column;gap:24px}
+.selo{align-self:flex-start;display:inline-flex;align-items:center;gap:8px;border:1px solid var(--borda);border-radius:999px;padding:6px 14px;font-size:13px;color:#CFCDE0;letter-spacing:.02em}
+.selo::before{content:"";width:8px;height:8px;border-radius:50%;background:var(--ciano)}
+h1{font-weight:800;font-size:clamp(36px,5.4vw,56px);line-height:1.06;letter-spacing:-.035em}
+.degrade{background:linear-gradient(90deg,var(--roxo),var(--ciano));-webkit-background-clip:text;background-clip:text;color:transparent}
+.lead{font-size:18px;color:var(--suave);max-width:680px}
+.duas{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,340px),1fr));gap:16px}
+.cartao{background:var(--cartao);border:1px solid var(--linha);border-radius:18px;padding:26px;display:flex;flex-direction:column;gap:10px}
+.cartao h2{font-size:14px;letter-spacing:.1em;text-transform:uppercase;color:var(--ciano);font-weight:600}
+.premio{border-color:#3B2F6E;background:linear-gradient(135deg,#1E1838,#14223A)}
+.premio p{font-size:18px}
+.cartao ul{padding:0;list-style:none;display:flex;flex-direction:column;gap:8px;color:var(--suave)}
+.cartao li{padding-left:22px;position:relative}
+.cartao li::before{content:"";position:absolute;left:2px;top:.62em;width:8px;height:8px;border-radius:50%;background:var(--roxo)}
+.cartao li.nao::before{background:none;border:1.5px solid var(--fraco)}
+.secao{padding-top:56px;padding-bottom:56px;display:flex;flex-direction:column;gap:28px}
+.cabeca{display:flex;flex-direction:column;gap:10px}
+h2.grande{font-weight:800;font-size:clamp(28px,3.6vw,40px);line-height:1.1;letter-spacing:-.03em}
+.cabeca p{color:var(--suave)}
+ol.passos{list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:14px}
+.passo{background:var(--cartao);border:1px solid var(--linha);border-radius:18px;padding:24px;display:grid;grid-template-columns:56px 1fr;gap:6px 18px;align-items:start}
+.num{grid-row:span 3;width:56px;height:56px;border-radius:16px;display:flex;align-items:center;justify-content:center;font-size:24px;font-weight:800;color:var(--fundo)}
+.passo h3{font-size:20px;font-weight:600;line-height:1.3}
+.passo p{color:var(--suave)}
+.passo p b{color:var(--texto);font-weight:600}
+.acao{justify-self:start;margin-top:10px;display:inline-flex;align-items:center;gap:10px;background:var(--ciano);color:var(--fundo);font-weight:600;padding:12px 22px;border-radius:12px;min-height:48px}
+.acao:hover{background:#5FE0F3}
+.dica{background:none;border:1px dashed var(--borda)}
+.dica h2{color:var(--roxo)}
+.dica p{color:var(--suave)}.dica b{color:var(--texto)}
+.alerta{display:flex;gap:12px;align-items:flex-start;border-left:3px solid #F5B84B;background:#1D1A2C;border-radius:0 12px 12px 0;padding:16px 20px;color:#E8E5F5}
+details{border-top:1px solid var(--linha2);padding:20px 0}
+details:last-of-type{border-bottom:1px solid var(--linha2)}
+summary{cursor:pointer;list-style:none;font-weight:600;font-size:17px;display:flex;justify-content:space-between;gap:16px}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";color:var(--ciano)}
+details[open] summary::after{content:"−"}
+details p{margin-top:10px;color:var(--suave)}
+.contato{color:var(--suave)}.contato a{color:var(--roxo);text-decoration:underline}
+footer{border-top:1px solid var(--linha);margin-top:24px}
+footer .caixa{padding-top:36px;padding-bottom:36px;display:flex;flex-direction:column;gap:16px;font-size:14px;color:var(--fraco)}
+footer nav{display:flex;flex-wrap:wrap;gap:10px 24px}
+footer nav a{color:var(--suave)}
+@media (max-width:560px){.topo .caixa{padding-top:44px;padding-bottom:40px}.passo{grid-template-columns:1fr;padding:20px}.num{grid-row:auto;width:44px;height:44px;font-size:20px;border-radius:12px}.acao{justify-self:stretch;justify-content:center}.secao{padding-top:44px;padding-bottom:44px}}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+.duas+.duas{margin-top:0}.cartao p{color:var(--suave)}.cartao p a,.cartao li a{color:var(--roxo);text-decoration:underline}.cartao li b{color:var(--texto);font-weight:600}
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs><linearGradient id="zg" gradientUnits="userSpaceOnUse" x1="121" y1="121" x2="401" y2="415"><stop offset="0" stop-color="#8B5CF6"/><stop offset="1" stop-color="#22D3EE"/></linearGradient></defs><symbol id="logo" viewBox="120 120 300 310"><path d="M150 150H330L180 352H300" fill="none" stroke="url(#zg)" stroke-width="58" stroke-linejoin="round" stroke-linecap="round"/><path d="M300 300L390 352L300 404Z" fill="url(#zg)" stroke="url(#zg)" stroke-width="22" stroke-linejoin="round"/></symbol></svg>
+<header>
+<div class="caixa">
+<a href="/en/" class="marca" aria-label="Zappy TV, home"><svg width="34" height="34" aria-hidden="true"><use href="#logo"/></svg>Zappy TV</a>
+<nav class="idiomas" aria-label="Language"><a href="/sincronizacao/" hreflang="pt-BR" lang="pt-BR">PT</a><a href="/en/sync/" hreflang="en" lang="en" aria-current="true">EN</a><a href="/es/sincronizacion/" hreflang="es" lang="es">ES</a></nav>
+</div>
+</header>
+
+<main>
+<section class="topo">
+<div class="caixa">
+<span class="selo">New in version 0.1.6</span>
+<h1>Start on the TV, <span class="degrade">keep going on your phone.</span></h1>
+<p class="lead">Sync keeps your favorites, the point where you stopped each movie or episode and your recent channels the same on every device on your account. It starts off, and you choose what's included.</p>
+<div class="duas">
+<div class="cartao premio"><h2>What syncs</h2><ul><li><b>Favorites</b>: channels, movies and series, in the same order</li><li><b>Continue watching</b>: movies and episodes resume at the same point</li><li><b>Recent channels</b>: the channels watched most recently</li><li>What you remove on one device is removed on the others too</li></ul></div>
+<div class="cartao"><h2>What you need</h2><ul><li>The full version, activated with your account on the devices</li><li>The same playlist from the same provider on the devices that will sync</li><li>Zappy TV version 0.1.6 or newer</li><li class="nao">In the free version, the option shows a padlock</li></ul></div>
+</div>
+</div>
+</section>
+
+<section class="caixa secao" aria-labelledby="como">
+<div class="cabeca"><h2 class="grande" id="como">How to turn it on</h2><p>Do this on each device that will take part. Every device starts with sync off.</p></div>
+<ol class="passos">
+<li class="passo"><span class="num" style="background:#A78BFA" aria-hidden="true">1</span><h3><span class="sr">Step 1: </span>Open Sync</h3><p>In the app, go to <b>Settings &gt; Sync</b>. Under <b>This device's group</b> you'll see <b>Off</b>.</p></li>
+<li class="passo"><span class="num" style="background:#8FA9F8" aria-hidden="true">2</span><h3><span class="sr">Step 2: </span>Create a group or pick one</h3><p>Select <b>Create group</b> and give it a name, such as <b>Family</b>. If the group already exists, use <b>Choose a group</b>. An account can have up to 5 groups.</p></li>
+<li class="passo"><span class="num" style="background:#5DC3F1" aria-hidden="true">3</span><h3><span class="sr">Step 3: </span>Turn on what you want to sync</h3><p>Choose from <b>Favorites</b>, <b>Continue watching</b> and <b>Recent channels</b>. Each device decides what it shares.</p></li>
+<li class="passo"><span class="num" style="background:#22D3EE" aria-hidden="true">4</span><h3><span class="sr">Step 4: </span>Repeat on your other devices</h3><p>On the TV, phone or PC, open the same screen and pick <b>the same group</b>. Done: what you mark on one shows up on the others.</p></li>
+</ol>
+<div class="cartao dica"><h2>One group per person</h2><p>Devices in a group share with each other, and different groups never mix. For example, create <b>Family</b> for the living room and your phone, and <b>Kids</b> for the bedroom TV. Under <b>Account groups</b> you can see how many devices are in each group and <b>rename or delete</b> it.</p></div>
+<div class="duas">
+<div class="cartao"><h2>When it syncs</h2><ul><li>When you open the app</li><li>When you return to the app after 1 hour</li><li>About 10 seconds after a change, like adding a favorite</li><li>Your place in a movie or episode, 1 minute after you stop watching</li><li>Any time, with the <b>Sync now</b> button</li></ul></div>
+<div class="cartao"><h2>What doesn't sync</h2><ul><li class="nao">Your playlists and your provider login details</li><li class="nao">Parental controls: hidden and locked channels and the PIN</li><li class="nao">Items from different playlists: every device needs the same playlist</li></ul></div>
+</div>
+<div class="cartao"><h2>Privacy</h2><p>The Zappy TV server only stores <b>scrambled codes</b> that identify each item. It never receives playlist addresses, usernames, passwords or channel names. The data is removed from the server when you delete the group or your account, or after 90 days without the full version. More details in the <a href="https://iptv-licencas-fxz6sddhfa-uk.a.run.app/privacidade?lang=en">Privacy policy</a>.</p></div>
+</section>
+
+<section class="caixa secao" aria-labelledby="faq" style="padding-top:8px">
+<h2 class="grande" id="faq">Questions</h2>
+<div>
+<details><summary>A favorite didn't show up on my other device</summary><p>Check that both devices are in the same group, with Favorites turned on, and use the same playlist from the same provider. Then select <b>Sync now</b> on both.</p></details>
+<details><summary>Does deleting a group delete my favorites?</summary><p>No. The devices in the group just stop syncing and keep everything they already had. What was stored on the server for that group is deleted.</p></details>
+<details><summary>How do I turn sync off?</summary><p>In <b>Settings &gt; Sync</b>, choose <b>Off</b> as this device's group. The other devices stay in the group.</p></details>
+<details><summary>Does it work in the free version?</summary><p>No. Sync is part of the full version. In the free version the option shows a padlock.</p></details>
+<details><summary>Does it need to run all the time?</summary><p>No. The app runs nothing in the background: it syncs while it's open, at the moments listed above.</p></details>
+</div>
+<p class="contato">Another question? Write to <a href="mailto:fabiofish@gmail.com">the developer</a>.</p>
+</section>
+</main>
+
+<footer>
+<div class="caixa">
+<span class="marca" style="font-size:17px"><svg width="22" height="22" aria-hidden="true"><use href="#logo"/></svg>Zappy TV</span>
+<span>Zappy TV does not provide, host or sell any content. Users are responsible for the playlists they use.</span>
+<nav aria-label="Footer">
+<a href="/en/">Zappy TV website</a>
+<a href="https://iptv-licencas-fxz6sddhfa-uk.a.run.app/privacidade?lang=en">Privacy policy</a>
+<a href="/en/termos.html">Terms of use</a>
+<a href="mailto:fabiofish@gmail.com">Contact</a>
+</nav>
+<span>© 2026 Zappy TV. All rights reserved.</span>
+</div>
+</footer>
+</body>
+</html>
