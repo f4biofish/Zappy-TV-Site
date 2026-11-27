@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Become a Zappy TV tester</title>
+<meta name="description" content="Help launch Zappy TV on Google Play: test it for 14 days and get 6 months of the full version.">
+<!-- Página temporária do teste fechado: fora do Google e do sitemap. Depois do lançamento, vira redirecionamento (README). -->
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#0D0C17">
+<link rel="alternate" hreflang="pt-BR" href="https://zappytv.app.br/teste/">
+<link rel="alternate" hreflang="en" href="https://zappytv.app.br/en/test/">
+<link rel="alternate" hreflang="es" href="https://zappytv.app.br/es/prueba/">
+<link rel="alternate" hreflang="x-default" href="https://zappytv.app.br/teste/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Zappy TV">
+<meta property="og:locale" content="en_US">
+<meta property="og:url" content="https://zappytv.app.br/en/test/">
+<meta property="og:title" content="Become a Zappy TV tester">
+<meta property="og:description" content="Help launch Zappy TV on Google Play: test it for 14 days and get 6 months of the full version.">
+<meta property="og:image" content="https://zappytv.app.br/assets/compartilhar.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="preload" href="/assets/inter.woff2" as="font" type="font/woff2" crossorigin>
+<style>
+@font-face{font-family:Inter;src:url(/assets/inter.woff2) format("woff2");font-weight:100 900;font-display:swap}
+:root{--fundo:#0D0C17;--cartao:#16142A;--linha:#221F38;--linha2:#26233F;--borda:#36325A;--texto:#F4F3FA;--suave:#ABA8C3;--fraco:#8F8CAB;--ciano:#22D3EE;--roxo:#A78BFA}
+*{box-sizing:border-box}
+body{margin:0;background:var(--fundo);color:var(--texto);font:16px/1.6 Inter,system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;overflow-x:hidden}
+a{color:var(--texto);text-decoration:none}
+a:focus-visible,summary:focus-visible{outline:2px solid var(--ciano);outline-offset:3px;border-radius:6px}
+h1,h2,h3,p,ul{margin:0}
+.caixa{max-width:880px;margin:0 auto;padding-left:24px;padding-right:24px}
+.marca{display:flex;align-items:center;gap:10px;font-weight:800;font-size:21px;letter-spacing:-.01em}
+header{border-bottom:1px solid var(--linha)}
+header .caixa{padding-top:18px;padding-bottom:18px;display:flex;align-items:center;justify-content:space-between;gap:16px}
+.idiomas{display:flex;gap:4px;font-size:13px;font-weight:600;letter-spacing:.04em}.idiomas a{color:var(--fraco);padding:10px 6px;min-height:44px;display:inline-flex;align-items:center}.idiomas a[aria-current]{color:var(--texto)}
+.topo{background:radial-gradient(ellipse 80% 70% at 15% 0%,#241E45 0%,var(--fundo) 70%)}
+.topo .caixa{padding-top:72px;padding-bottom:56px;display:flex;flex-direction:column;gap:24px}
+.selo{align-self:flex-start;display:inline-flex;align-items:center;gap:8px;border:1px solid var(--borda);border-radius:999px;padding:6px 14px;font-size:13px;color:#CFCDE0;letter-spacing:.02em}
+.selo::before{content:"";width:8px;height:8px;border-radius:50%;background:var(--ciano)}
+h1{font-weight:800;font-size:clamp(36px,5.4vw,56px);line-height:1.06;letter-spacing:-.035em}
+.degrade{background:linear-gradient(90deg,var(--roxo),var(--ciano));-webkit-background-clip:text;background-clip:text;color:transparent}
+.lead{font-size:18px;color:var(--suave);max-width:680px}
+.duas{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,340px),1fr));gap:16px}
+.cartao{background:var(--cartao);border:1px solid var(--linha);border-radius:18px;padding:26px;display:flex;flex-direction:column;gap:10px}
+.cartao h2{font-size:14px;letter-spacing:.1em;text-transform:uppercase;color:var(--ciano);font-weight:600}
+.premio{border-color:#3B2F6E;background:linear-gradient(135deg,#1E1838,#14223A)}
+.premio p{font-size:18px}
+.cartao ul{padding:0;list-style:none;display:flex;flex-direction:column;gap:8px;color:var(--suave)}
+.cartao li{padding-left:22px;position:relative}
+.cartao li::before{content:"";position:absolute;left:2px;top:.62em;width:8px;height:8px;border-radius:50%;background:var(--roxo)}
+.cartao li.nao::before{background:none;border:1.5px solid var(--fraco)}
+.secao{padding-top:56px;padding-bottom:56px;display:flex;flex-direction:column;gap:28px}
+.cabeca{display:flex;flex-direction:column;gap:10px}
+h2.grande{font-weight:800;font-size:clamp(28px,3.6vw,40px);line-height:1.1;letter-spacing:-.03em}
+.cabeca p{color:var(--suave)}
+ol.passos{list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:14px}
+.passo{background:var(--cartao);border:1px solid var(--linha);border-radius:18px;padding:24px;display:grid;grid-template-columns:56px 1fr;gap:6px 18px;align-items:start}
+.num{grid-row:span 3;width:56px;height:56px;border-radius:16px;display:flex;align-items:center;justify-content:center;font-size:24px;font-weight:800;color:var(--fundo)}
+.passo h3{font-size:20px;font-weight:600;line-height:1.3}
+.passo p{color:var(--suave)}
+.passo p b{color:var(--texto);font-weight:600}
+.acao{justify-self:start;margin-top:10px;display:inline-flex;align-items:center;gap:10px;background:var(--ciano);color:var(--fundo);font-weight:600;padding:12px 22px;border-radius:12px;min-height:48px}
+.acao:hover{background:#5FE0F3}
+.dica{background:none;border:1px dashed var(--borda)}
+.dica h2{color:var(--roxo)}
+.dica p{color:var(--suave)}.dica b{color:var(--texto)}
+.alerta{display:flex;gap:12px;align-items:flex-start;border-left:3px solid #F5B84B;background:#1D1A2C;border-radius:0 12px 12px 0;padding:16px 20px;color:#E8E5F5}
+details{border-top:1px solid var(--linha2);padding:20px 0}
+details:last-of-type{border-bottom:1px solid var(--linha2)}
+summary{cursor:pointer;list-style:none;font-weight:600;font-size:17px;display:flex;justify-content:space-between;gap:16px}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";color:var(--ciano)}
+details[open] summary::after{content:"−"}
+details p{margin-top:10px;color:var(--suave)}
+.contato{color:var(--suave)}.contato a{color:var(--roxo);text-decoration:underline}
+footer{border-top:1px solid var(--linha);margin-top:24px}
+footer .caixa{padding-top:36px;padding-bottom:36px;display:flex;flex-direction:column;gap:16px;font-size:14px;color:var(--fraco)}
+footer nav{display:flex;flex-wrap:wrap;gap:10px 24px}
+footer nav a{color:var(--suave)}
+@media (max-width:560px){.topo .caixa{padding-top:44px;padding-bottom:40px}.passo{grid-template-columns:1fr;padding:20px}.num{grid-row:auto;width:44px;height:44px;font-size:20px;border-radius:12px}.acao{justify-self:stretch;justify-content:center}.secao{padding-top:44px;padding-bottom:44px}}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs><linearGradient id="zg" gradientUnits="userSpaceOnUse" x1="121" y1="121" x2="401" y2="415"><stop offset="0" stop-color="#8B5CF6"/><stop offset="1" stop-color="#22D3EE"/></linearGradient></defs><symbol id="logo" viewBox="120 120 300 310"><path d="M150 150H330L180 352H300" fill="none" stroke="url(#zg)" stroke-width="58" stroke-linejoin="round" stroke-linecap="round"/><path d="M300 300L390 352L300 404Z" fill="url(#zg)" stroke="url(#zg)" stroke-width="22" stroke-linejoin="round"/></symbol></svg>
+<header>
+<div class="caixa">
+<a href="/en/" class="marca" aria-label="Zappy TV, home"><svg width="34" height="34" aria-hidden="true"><use href="#logo"/></svg>Zappy TV</a>
+<nav class="idiomas" aria-label="Language"><a href="/teste/" hreflang="pt-BR" lang="pt-BR">PT</a><a href="/en/test/" hreflang="en" lang="en" aria-current="true">EN</a><a href="/es/prueba/" hreflang="es" lang="es">ES</a></nav>
+</div>
+</header>
+
+<main>
+<section class="topo">
+<div class="caixa">
+<span class="selo">Closed test on Google Play</span>
+<h1>Test Zappy TV <span class="degrade">and get 6 months free.</span></h1>
+<p class="lead">Zappy TV is a light player for Android TV, Google TV and Android phones. It has no channels: you add the M3U or Xtream playlist from the provider you already pay for. To publish on Google Play, I need people testing for 14 days.</p>
+<div class="duas">
+<div class="cartao premio"><h2>Your reward</h2><p>Everyone who stays the 14 days and fills the form gets <b>6 months of the full version</b>, on up to 5 devices.</p></div>
+<div class="cartao"><h2>Who can join</h2><ul><li>An Android phone (7.0 or newer), or a TV with Android TV or Google TV</li><li>A Google account (the same one you use on the Play Store)</li><li class="nao">Fire TV doesn't count yet: it installs from Amazon, and this test is on Google Play</li></ul></div>
+</div>
+</div>
+</section>
+
+<section class="caixa secao" aria-labelledby="como">
+<div class="cabeca"><h2 class="grande" id="como">How to join</h2><p>It takes about 3 minutes. Follow the steps in order, always with the same Google account.</p></div>
+<ol class="passos">
+<li class="passo"><span class="num" style="background:#A78BFA" aria-hidden="true">1</span><h3><span class="sr">Step 1: </span>Join the testers group</h3><p>Open the group and tap <b>Join group</b>. This is what unlocks your access to the test.</p><a class="acao" href="https://groups.google.com/g/testadores-zappy-tv" target="_blank" rel="noopener">Join the group<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg></a></li>
+<li class="passo"><span class="num" style="background:#8FA9F8" aria-hidden="true">2</span><h3><span class="sr">Step 2: </span>Opt in to the test</h3><p>Tap the button to <b>become a tester</b>. If it says the app is not available, check step 1 and try again in a few minutes.</p><a class="acao" href="https://play.google.com/apps/testing/br.com.zappy.tv" target="_blank" rel="noopener">Opt in<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg></a></li>
+<li class="passo"><span class="num" style="background:#5DC3F1" aria-hidden="true">3</span><h3><span class="sr">Step 3: </span>Install from Google Play</h3><p>On your phone, tap <b>Install</b>. During the test the app doesn't show up in Play search, so use this button.</p><a class="acao" href="https://play.google.com/store/apps/details?id=br.com.zappy.tv" target="_blank" rel="noopener">Open on Google Play<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg></a></li>
+<li class="passo"><span class="num" style="background:#22D3EE" aria-hidden="true">4</span><h3><span class="sr">Step 4: </span>Use it for 14 days and tell me what you think</h3><p>Keep the app installed and use it when you can. At the end, fill the form (2 minutes) and leave your email to get the 6 months.</p><a class="acao" href="https://docs.google.com/forms/d/e/1FAIpQLScy9EVdOFXbO2wz2-LaSt-XoAJ40fqv3DfZshWJTjprOZ8nsA/viewform" target="_blank" rel="noopener">Fill the form<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg></a></li>
+</ol>
+<div class="cartao dica"><h2>Installing on a TV?</h2><p>Open the step 3 button on a computer or phone, sign in with the same Google account as the TV, tap <b>Install</b> and pick your TV from the device list. Zappy TV shows up on the TV in a few minutes.</p></div>
+<p class="alerta" role="note"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#F5B84B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex:none;margin-top:1px"><path d="M12 3 2 20h20L12 3zM12 10v4M12 17.5v.01"/></svg><span>Don't uninstall the app or leave the group before the 14 days. Google only counts people who stay in the test.</span></p>
+</section>
+
+<section class="caixa secao" aria-labelledby="faq" style="padding-top:8px">
+<h2 class="grande" id="faq">Questions</h2>
+<div>
+<details><summary>Does the app include channels?</summary><p>No. Zappy TV is a player. To test it, use the M3U playlist or Xtream login from the provider you already pay for.</p></details>
+<details><summary>The link says the app is not available</summary><p>Usually you haven't joined the group yet (step 1) or you're on a different account. Make sure the group account is the same as your Play Store account and wait a few minutes.</p></details>
+<details><summary>I can't find the app in Play search</summary><p>That's normal during the test. Use the step 3 button, which goes straight to the app page.</p></details>
+<details><summary>Will I pay anything?</summary><p>No. The app is free to download and the test costs nothing. The 6 months of the full version are granted to the email you leave in the form, after the test.</p></details>
+<details><summary>Can I leave the test?</summary><p>Yes, any time, from the step 2 link. Just remember the reward is for people who stay the 14 days.</p></details>
+</div>
+<p class="contato">Another question? Write to <a href="mailto:fabiofish@gmail.com">the developer</a>.</p>
+</section>
+</main>
+
+<footer>
+<div class="caixa">
+<span class="marca" style="font-size:17px"><svg width="22" height="22" aria-hidden="true"><use href="#logo"/></svg>Zappy TV</span>
+<span>Zappy TV doesn't provide, host or sell any content. Users are responsible for the playlists they use.</span>
+<nav aria-label="Footer">
+<a href="/en/">Zappy TV website</a>
+<a href="https://iptv-licencas-fxz6sddhfa-uk.a.run.app/privacidade?lang=en">Privacy policy</a>
+<a href="/en/termos.html">Terms of use</a>
+<a href="mailto:fabiofish@gmail.com">Contact</a>
+</nav>
+<span>© 2026 Zappy TV. All rights reserved.</span>
+</div>
+</footer>
+</body>
+</html>
