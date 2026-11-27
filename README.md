@@ -74,6 +74,10 @@ Durante o teste fechado da Google Play existe uma página só para quem recebe o
 (`noindex`), fora do `sitemap.xml` e fora do menu. Os links (grupo, ativar teste, Play e formulário) estão
 nos três `index.html`; se algum mudar, troque nos três.
 
+**Contador de acessos:** cada página carrega uma imagem de 1 pixel do servidor de licenças
+(`/contador/teste-pt`, `-en`, `-es`), que só soma +1 no dia. Os números aparecem no Painel do dono
+(`/painel` no servidor). Não guarda IP nem cookie. Para desligar, apague o `<img>` do fim das três páginas.
+
 **Depois do lançamento:** substitua o conteúdo dos três arquivos por um redirecionamento para a página
 inicial do mesmo idioma (por exemplo `<meta http-equiv="refresh" content="0; url=/">` com `noindex`),
 para quem tiver o link antigo não cair numa página desatualizada.
