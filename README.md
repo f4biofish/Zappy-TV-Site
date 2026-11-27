@@ -24,6 +24,7 @@ Não tem build nem dependência: é HTML e CSS puros. Para ver no PC, abra o `in
 | `assets/compartilhar.jpg` | Imagem que aparece ao compartilhar o link (1200x630) |
 | `robots.txt`, `.nojekyll` | Para buscadores, e para o Pages servir os arquivos como estão |
 | `LICENCAS.md` | Licença da fonte |
+| `teste/`, `en/test/`, `es/prueba/` | Página temporária dos testadores (veja abaixo) |
 | `en/`, `es/` | As mesmas páginas em inglês e espanhol (`index.html`, `termos.html`, `licencas.html`) |
 
 ## Idiomas
@@ -65,3 +66,14 @@ Links:
 - Manter a página leve: hoje são cerca de 120 KB na primeira visita.
 - Privacidade e Excluir conta ficam no servidor de licenças; se o servidor ganhar um subdomínio (ex.: api.zappytv.app.br),
   atualizar esses links nas páginas das três pastas.
+
+## Página dos testadores (temporária)
+
+Durante o teste fechado da Google Play existe uma página só para quem recebe o convite:
+`/teste/` (português), `/en/test/` (inglês) e `/es/prueba/` (espanhol). Ela fica **fora do Google**
+(`noindex`), fora do `sitemap.xml` e fora do menu. Os links (grupo, ativar teste, Play e formulário) estão
+nos três `index.html`; se algum mudar, troque nos três.
+
+**Depois do lançamento:** substitua o conteúdo dos três arquivos por um redirecionamento para a página
+inicial do mesmo idioma (por exemplo `<meta http-equiv="refresh" content="0; url=/">` com `noindex`),
+para quem tiver o link antigo não cair numa página desatualizada.
