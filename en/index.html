@@ -45,6 +45,7 @@ nav.principal{display:flex;flex-wrap:wrap;align-items:center;gap:8px 28px;font-s
 nav.principal a{color:var(--suave)}
 nav.principal a.cta{background:var(--ciano);color:var(--fundo);font-weight:600;padding:10px 20px;border-radius:999px;min-height:44px;display:inline-flex;align-items:center}
 /* Topo */
+.novo{align-self:flex-start;display:inline-flex;align-items:center;gap:10px;background:#1B1834;border:1px solid #3B2F6E;border-radius:999px;padding:6px 14px 6px 6px;font-size:14px;color:var(--texto);min-height:40px}.novo b{background:linear-gradient(90deg,var(--roxo),var(--ciano));color:var(--fundo);font-size:12px;font-weight:700;letter-spacing:.04em;text-transform:uppercase;border-radius:999px;padding:3px 10px}.novo svg{color:var(--ciano)}.novo:hover{border-color:var(--ciano)}.novo+.selo{margin-top:-12px}
 .topo{background:radial-gradient(ellipse 70% 60% at 15% 0%,#241E45 0%,var(--fundo) 70%)}
 .topo .caixa{padding-top:88px;padding-bottom:80px;display:flex;flex-wrap:wrap;align-items:center;gap:56px}
 .topo-texto{flex:1 1 480px;min-width:0;display:flex;flex-direction:column;gap:26px}
@@ -150,6 +151,7 @@ footer nav a{color:var(--suave)}
 <nav class="principal" aria-label="Main">
 <a href="#recursos">Features</a>
 <a href="#como-funciona">How it works</a>
+<a href="sync/">Sync</a>
 <a href="#faq">FAQ</a>
 <a href="#download" class="cta">Download free</a>
 </nav>
@@ -160,6 +162,7 @@ footer nav a{color:var(--suave)}
 <section id="topo" class="topo">
 <div class="caixa">
 <div class="topo-texto">
+<a class="novo" href="sync/"><b>New</b>Sync favorites between devices<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
 <span class="selo">On TV, phone and computer</span>
 <h1>Your playlist, organized <span class="degrade">the way it should be.</span></h1>
 <p class="lead">Open your M3U playlist or sign in to your Xtream server and see everything sorted into live TV, guide, movies and series. Built for the remote control, light even on basic devices.</p>
