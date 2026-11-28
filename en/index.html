@@ -83,6 +83,7 @@ h3{font-size:21px;font-weight:600}
 .grade{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:20px}
 .recurso{background:var(--cartao);border:1px solid var(--linha);border-radius:18px;padding:32px;display:flex;flex-direction:column;gap:14px}
 .recurso p,.passo p{color:var(--suave)}
+.recurso.largo{grid-column:1/-1}.recurso .link{color:var(--roxo);font-size:15px;text-decoration:underline;align-self:flex-start}
 #recursos{padding-bottom:40px}
 .passos{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:40px}
 .passo{display:flex;flex-direction:column;gap:14px;border-top:1px solid var(--borda);padding-top:28px}
@@ -238,6 +239,12 @@ footer nav a{color:var(--suave)}
 <h3>Activate the TV from your phone</h3>
 <p>No typing passwords with the remote: scan the QR code on the screen with your phone and you're done.</p>
 </div>
+<div class="recurso largo">
+<svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#22D3EE" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 11a8 8 0 0 0-14.3-4.9L4 8M4 4v4h4M4 13a8 8 0 0 0 14.3 4.9L20 16M20 20v-4h-4"/></svg>
+<h3>Sync between devices</h3>
+<p>The same Favorites, Continue watching and Recent channels on your TV, phone and PC. You choose what syncs on each device.</p>
+<a class="link" href="sync/">See how to turn it on</a>
+</div>
 </div>
 </section>
 
@@ -292,6 +299,7 @@ footer nav a{color:var(--suave)}
 <details><summary>Which devices does it work on?</summary><p>Android TV and Google TV, Fire TV, phones with Android 7.0 or newer and computers with Windows 10 or 11 (64-bit).</p></details>
 <details><summary>Is the app free?</summary><p>You can try everything for free for 7 days. After that, the app stays free with some features limited (they show a padlock). The full version unlocks everything on up to 5 devices. Details in the <a href="termos.html">Terms of use</a>.</p></details>
 <details id="instalar-windows"><summary>Windows warned about an "unknown publisher". Is it safe?</summary><p>The installer doesn't have a digital signature yet, so Windows shows this warning. Click "More info" and then "Run anyway". To check the file, compare the SHA-256 code shown on the Windows card with the result of the <code>Get-FileHash ZappyTV-windows.msi</code> command in PowerShell.</p></details>
+<details><summary>How do I sync favorites between devices?</summary><p>In the full version, go to Settings &gt; Sync, put the devices in the same group and turn on Favorites, Continue watching or Recent channels. The step by step is on the <a href="sync/">Sync between devices</a> page.</p></details>
 <details><summary>How do I delete my account?</summary><p>In the app, under My license, or on the <a href="https://iptv-licencas-fxz6sddhfa-uk.a.run.app/excluir-conta?lang=en">Delete account</a> page.</p></details>
 </div>
 </section>
